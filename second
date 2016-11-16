@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x=1,day,a;
+    do
+    {
+        printf("Input days:\n");
+        a=scanf("%d",&day);
+        if(a!=1)
+        {
+            while(getchar()!='\n')
+            continue;
+        }
+    }while((day<1)||(a!=1));
+    for(;day>1;)
+    {
+        x=(x+1)*2;
+        day--;
+    }
+    printf("x=%d\n",x);
+    return 0;
+}
